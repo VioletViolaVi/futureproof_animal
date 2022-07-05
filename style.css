@@ -1,3 +1,8 @@
 h1 {
-    color: skyblue;
+  color: darkgreen;
+}
+
+header,
+footer {
+  border: thin solid greenyellow;
 }

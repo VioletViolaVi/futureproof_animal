@@ -1,12 +1,24 @@
+/* 
+ - "a" is a direct child of 
+nav ul li > a {
+  color: orangered;
+}
+
+- not working...
+nav ul li > a:hover + a::after {
+  content: ' X ';
+}
+*/
+
+header,
+footer {
+  border: thin solid greenyellow;
+}
+
 nav ul li a {
   font-size: 150%;
   text-decoration: none;
   color: chartreuse;
-}
-
-/* "a" is a direct child of */
-nav ul li > a {
-  color: orangered;
 }
 
 nav ul li a:hover {
@@ -18,6 +30,15 @@ nav ul li a:visited {
   cursor: wait;
 }
 
+nav ul li > a::after {
+  content: ' | ';
+  color: red;
+}
+
+nav ul li > a::before {
+  content: ' |---> ';
+}
+
 section + h1 {
   color: yellow;
 }
@@ -26,11 +47,28 @@ h1 {
   color: darkgreen;
 }
 
-header,
-footer {
-  border: thin solid greenyellow;
+h1[alt='meaningless'] {
+  font-size: 6rem;
 }
 
 li.second-item {
   font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 2.5rem;
+}
+
+a[target='_blank'] {
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+table {
+  border: thick solid black;
+}
+
+td {
+  border: thin solid grey;
+  text-align: center;
 }

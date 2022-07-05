@@ -1,3 +1,27 @@
+nav ul li a {
+  font-size: 150%;
+  text-decoration: none;
+  color: chartreuse;
+}
+
+/* "a" is a direct child of */
+nav ul li > a {
+  color: orangered;
+}
+
+nav ul li a:hover {
+  cursor: crosshair;
+}
+
+nav ul li a:visited {
+  color: gray;
+  cursor: wait;
+}
+
+section + h1 {
+  color: yellow;
+}
+
 h1 {
   color: darkgreen;
 }
@@ -5,4 +29,8 @@ h1 {
 header,
 footer {
   border: thin solid greenyellow;
+}
+
+li.second-item {
+  font-weight: bold;
 }
